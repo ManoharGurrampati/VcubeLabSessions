@@ -31,8 +31,10 @@ public class PizzaHurt {
 	}
 	
 	public void placeOrder() {
+		status = true;
 		if(status) {
 			System.out.println("Oder No : "+orderID+" is palced !");
+			displayCart();
 		}
 	}
 	
@@ -49,7 +51,6 @@ public class PizzaHurt {
 		order1.addItem();
 		order1.itemPrice = 120;
 		order1.placeOrder();
-		order1.displayCart();
 		
 		changeWebsiteName();
 		
@@ -61,7 +62,6 @@ public class PizzaHurt {
 		order2.addItem();
 		order2.itemPrice = 150;
 		order2.placeOrder();
-		order2.displayCart();
 		
 	}
 
