@@ -5,7 +5,6 @@ public class VandeExpress {
 	static int totalTicketsBought;
 	static double totalAmount;
 	static double price = 500.00;
-	
 
 	String passengerName;
 	int age;
@@ -66,3 +65,32 @@ public class VandeExpress {
 	}
 
 }
+/*
+ * OUTPUT
+ * =========================================================== 
+ * | Welcome To Vande Express | Thanks For Choosing Us..
+ * ===========================================================
+ * 
+ * Your Tickets Are Successfully Booked !
+ * 
+ * Tickets Booked by : G Manohar Passenger 
+ * Age : 21 Years 
+ * Travelling From : (GNT) To : (SC JN) 
+ * No.of Tickets : 3 Tickets 
+ * Amount : 1500.0/-
+ * ===========================================================
+ * 
+ * Your Tickets Are Successfully Booked !
+ * 
+ * Tickets Booked by : V sai 
+ * Passenger Age : 25 Years 
+ * Travelling From : (SC JN) To : (Tirupati) 
+ * No.of Tickets : 5 Tickets 
+ * Amount : 2500.0/-
+ * =========================================================== 
+ * Total Number of Tickets Sold Today : 8 
+ * Tickets Total Amount Collected : 4000.0/-
+ * ===========================================================
+ * 
+ * 
+ */
