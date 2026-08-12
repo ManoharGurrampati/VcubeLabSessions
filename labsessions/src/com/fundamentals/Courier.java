@@ -19,10 +19,14 @@ public class Courier {
 		System.out.println("\n===========================================================================");
 		System.out.println("\t\t| Welcome to QuickShip Courier ! | ");
 	}
+	
+	{
+		totalCouriers += 1;
+	}
 
 	void bookCourier() {
 		deliveryAmount = (courierWeight * pricePerKG);
-		totalCouriers += noOfItems;
+//		totalCouriers += noOfItems;
 		totalWeight += courierWeight;
 		totalAmountCollected += deliveryAmount;
 		displayCourierDetails();
