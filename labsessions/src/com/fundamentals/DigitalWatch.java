@@ -41,12 +41,27 @@ public class DigitalWatch {
 		System.out.println("============================================================");
 	}
 
+	void checkHour() {
+		if (hours > 24) {
+			byte extraHour = (byte) (hours - 24);
+			hours = extraHour;
+		}
+	}
+//	
+//	void checkMinutes() {
+//		if (minutes > 59) {
+//			byte extramins = (byte) (hours - 24);
+//			hours += extramins;
+//		}
+//	}
+
 	public static void main(String[] args) {
 		DigitalWatch watch1 = new DigitalWatch();
 		watch1.brandName = "Titan";
 		watch1.watchType = "Analog Watch";
 		watch1.personName = "Manohar";
-		watch1.hours = 9;
+		watch1.hours = 30;
+		watch1.checkHour();
 		watch1.minutes = 36;
 		watch1.seconds = 55;
 
