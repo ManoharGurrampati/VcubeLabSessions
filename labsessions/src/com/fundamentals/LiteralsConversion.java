@@ -3,8 +3,8 @@ package com.fundamentals;
 public class LiteralsConversion {
 
 	// Integer Literals.
-	int num = 5596;// 5596 --> Decimal Literals with base 10 and ranges from 0-9
-	int num1 = 012734;// 5596 Octal --> Literals with base 8 and ranges from 0-7
+	int num = 556;// 5596 --> Decimal Literals with base 10 and ranges from 0-9
+	int num1 = 0_12734;// 5596 Octal --> Literals with base 8 and ranges from 0-7
 	int num2 = 0b10101;// 21 Binary --> Literals with base 2 and ranges from 0 & 1
 	int num3 = 0xac09;// 44041 --> Hexa-Decaimal Literals with base 16 and ranges from 0-9 & a(10)-f(15)
 
