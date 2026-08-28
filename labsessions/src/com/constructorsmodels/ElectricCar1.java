@@ -4,9 +4,14 @@ package com.constructorsmodels;
 public class ElectricCar1 extends Car {
 	String batteryCapacity;
 
+	ElectricCar1(){
+		
+	}
+	
 	ElectricCar1(String Type, String carModel, double carPrice, String batteryCapacity) {
-		super(Type, carModel, carPrice);
+		
 		this.batteryCapacity = batteryCapacity;
+		super(Type, carModel, carPrice);
 	}
 	
 	public static void main(String[] args) {
