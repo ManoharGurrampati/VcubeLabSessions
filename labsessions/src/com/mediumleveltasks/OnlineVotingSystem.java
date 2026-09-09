@@ -32,10 +32,23 @@ public class OnlineVotingSystem {
 					System.out.println("Select The Profile To Cast Your Vote !");
 					int vote = sc.nextInt();
 					switch (vote) {
-					case 1 -> System.out.println("Your Vote Is Captured For Manohar G | With VoterID " + voterID);
-					case 2 -> System.out.println("Your Vote Is Captured For Sai V | With VoterID " + voterID);
-					case 3 -> System.out.println("Your Vote Is Captured For Yogesh B | With VoterID " + voterID);
-					case 4 -> System.out.println("Your Vote Is Captured For Abhinav E | With VoterID " + voterID);
+					case 1 -> {
+						System.out.println("Your Vote Is Captured For Manohar G | With VoterID " + voterID);
+						isVoted = false;
+					}
+
+					case 2 -> {
+						System.out.println("Your Vote Is Captured For Sai V | With VoterID " + voterID);
+						isVoted = false;
+					}
+					case 3 -> {
+						System.out.println("Your Vote Is Captured For Yogesh B | With VoterID " + voterID);
+						isVoted = false;
+					}
+					case 4 -> {
+						System.out.println("Your Vote Is Captured For Abhinav E | With VoterID " + voterID);
+						isVoted = false;
+					}
 					default -> {
 						if (vote <= 0) {
 							System.out.println("Please Vote To A Proper Candidate !");
@@ -46,11 +59,13 @@ public class OnlineVotingSystem {
 						}
 					}
 					}
+
 				} while (isVoted);
+				System.out.println("Thank You For Voting!!!");
 			} else {
 				System.out.println("Your Not Eligible For Voting. ( Gender Problem! )");
 			}
-			System.out.println("Thank You For Voting!!!");
+
 		}
 	}
 
