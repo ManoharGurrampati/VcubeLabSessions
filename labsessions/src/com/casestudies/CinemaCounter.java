@@ -78,7 +78,7 @@ public class CinemaCounter {
 	}
 
 	public void displayTicketDetails(String movieName, String seatType, int count) {
-		if (count <= 0) {
+		if (count <= 0 && count > 5) {
 			System.out.println("Please Select Valid No.Of Tickets! (1-5 Tickets Only)");
 			ticketsCount(movieName, seatType);
 		} else {
