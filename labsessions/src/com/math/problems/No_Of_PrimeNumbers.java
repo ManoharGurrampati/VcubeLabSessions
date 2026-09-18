@@ -21,7 +21,7 @@ public class No_Of_PrimeNumbers {
 			for (int i = 1; i <= range; i++) {
 				if (isPrime(i)) {
 					no_Of_Primes++;
-					if (no_Of_Primes <= primeCounts) {
+					if (no_Of_Primes == primeCounts) {
 						System.out.print(i + " ");
 					}
 				}

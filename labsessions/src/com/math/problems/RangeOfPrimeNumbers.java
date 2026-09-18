@@ -12,6 +12,7 @@ public class RangeOfPrimeNumbers {
 		int range = sc.nextInt();
 		System.out.println("Prime Numbers are  : ");
 		for (int i = 1; i <= range; i++) {
+//			Checks and prints only prime numbers.
 			if (isPrime(i)) {
 				System.out.print(i + " ");
 			}
@@ -19,6 +20,7 @@ public class RangeOfPrimeNumbers {
 		}
 	}
 
+//finds which is not prime.
 	public static boolean isPrime(int n) {
 		boolean isPrimeNum = true;
 		if (n == 0 || n == 1) {
