@@ -3,7 +3,7 @@ package com.arrays;
 public class LeaderElements {
 
 	public static void main(String[] args) {
-		int[] array = { 12, 3, 7, 9, 6, 3, 13 };
+		int[] array = { 12, 3, 7, 9, 6, 3, 1 };
 		findLeaderElements(array);
 	}
 

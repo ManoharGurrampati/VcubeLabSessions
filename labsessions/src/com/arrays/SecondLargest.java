@@ -9,7 +9,7 @@ public class SecondLargest {
 		System.out.println("Enter your array size.");
 		int size = sc.nextInt();
 		int array[] = new int[size];
-		System.out.println("Enter your Marks.");
+		System.out.println("Enter the elements.");
 		for (int i = 0; i < array.length; i++) {
 			array[i] = sc.nextInt();
 		}
@@ -25,6 +25,8 @@ public class SecondLargest {
 			if (array[i] > firstmax) {
 				secondMax = firstmax;
 				firstmax = array[i];
+			} else if (array[i] > secondMax) {
+				secondMax = array[i];
 			}
 		}
 		return secondMax;
