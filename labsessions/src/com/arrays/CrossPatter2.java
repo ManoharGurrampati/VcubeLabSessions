@@ -1,5 +1,7 @@
 package com.arrays;
 
+import java.util.Scanner;
+
 //Given Input : 
 //[D,a,b,c,D]
 //[d,H,e,H,f]
@@ -9,14 +11,12 @@ package com.arrays;
 public class CrossPatter2 {
 
 	public static void main(String[] args) {
-//		String text1 = "DHONI";
-//		String text2 = "KOHLI";
-//		String text3 = "ROHIT";
-		String text4 = "MANOHAR";
-//		printPatter(text1);
-//		printPatter(text2);
-//		printPatter(text3);
-		printPatter(text4);
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a String");
+		String text = sc.nextLine().toUpperCase();
+		printPatter(text);
+		sc.close();
 	}
 
 	public static void printPatter(String text) {
@@ -27,7 +27,7 @@ public class CrossPatter2 {
 			for (int j = 0; j < array[0].length; j++) {
 				if (i == j || j + i == array.length - 1) {
 					array[i][j] = text.charAt(i);
-				} else {
+				}  else {
 					array[i][j] = filler;
 					filler++;
 					if (filler > 'z') {
