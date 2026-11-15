@@ -10,7 +10,7 @@ public class Vehicle {
 	}
 
 	public Vehicle() {
-		super();
+
 	}
 
 	public void start() {

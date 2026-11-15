@@ -1,5 +1,9 @@
 package com.oops.abstraction;
 
 public interface PaymentMethod {
-	void pay(double amount);
+	void makePayment();
+
+	static void displayMethod() {
+		System.out.println("Transaction Successfully Completed !");
+	}
 }

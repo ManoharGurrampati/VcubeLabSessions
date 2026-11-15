@@ -13,8 +13,8 @@ public class Bike extends Vehicle {
 	}
 
 	public Bike(String name, int speed) {
-		super.name = name;
-		super.speed = speed;
+		System.out.println("Hello");
+		super(name, speed);
 	}
 
 	void doWheeling() {

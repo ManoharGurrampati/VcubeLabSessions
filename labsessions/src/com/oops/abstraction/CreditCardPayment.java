@@ -1,12 +1,30 @@
 package com.oops.abstraction;
 
-public class CreditCardPayment implements PaymentMethod {
+import java.util.Scanner;
 
-	public void pay(double amount) {
-		System.out.println("Amount " + amount + "/- Successfully paid !");
+public class CreditCardPayment implements PaymentMethod {
+	public long creditCardNumber;
+	public int pinNumber;
+
+	Scanner sc = new Scanner(System.in);
+
+	public CreditCardPayment(long creditCardNumber, int pinNumber) {
+		this.pinNumber = pinNumber;
+		this.creditCardNumber = creditCardNumber;
 	}
-	
-	public void sendMoney() {
-		System.out.println("Money Transfered Successfully !");
+
+	@Override
+	public void makePayment() {
+		System.out.println("=============================================");
+		System.out.println("Enter your credit Number Here : ");
+		Long creditNum = sc.nextLong();
+		System.out.println("Enter Your Pin Here : ");
+		int pin = sc.nextInt();
+		if (pin == pinNumber && creditNum == creditCardNumber) {
+			PaymentMethod.displayMethod();
+		} else {
+			System.out.println("Entered Credentials are invalid !!");
+		}
+		System.out.println("=============================================");
 	}
 }
